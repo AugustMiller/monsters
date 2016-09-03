@@ -1,0 +1,14 @@
+title: Monsters
+pages:
+  template:
+    - monster
+files: false
+fields:
+  title:
+    label: Collection Name
+    type: text
+  help:
+    label: Instructions
+    type: info
+    help: >
+      Add monsters, to the left.

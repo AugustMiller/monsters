@@ -1,0 +1,9 @@
+label: Attributes
+type: select
+options:
+  strength: Strength
+  dexterity: Dexterity
+  constitution: Constitution
+  intelligence: Intelligence
+  wisdom: Wisdom
+  charisma: Charisma

@@ -1,0 +1,43 @@
+label: Skill
+type: select
+options:
+  appraise: Appraise
+  autohypnosis: Autohypnosis
+  balance: Balance
+  bluff: Bluff
+  climb: Climb
+  concentration: Concentration
+  control shape: Control Shape
+  craft: Craft
+  decipher script: Decipher Script
+  diplomacy: Diplomacy
+  disable-device: Disable Device
+  disguise: Disguise
+  escape artist: Escape Artist
+  forgery: Forgery
+  gather-information: Gather Information
+  handle-animal: Handle Animal
+  heal: Heal
+  hide: Hide
+  intimidate: Intimidate
+  jump: Jump
+  knowledge: Knowledge
+  listen: Listen
+  move-silently: Move Silently
+  open-lock: Open Lock
+  perform: Perform
+  psicraft: Psicraft
+  profession: Profession
+  ride: Ride
+  search: Search
+  sense-motive: Sense Motive
+  sleight-of-hand: Sleight of Hand
+  speak-language: Speak Language
+  spellcraft: Spellcraft
+  spot: Spot
+  survival: Survival
+  swim: Swim
+  tumble: Tumble
+  use-magic-device: Use Magic Device
+  use-psionic-device: Use Psionic Device
+  use-rope: Use Rope

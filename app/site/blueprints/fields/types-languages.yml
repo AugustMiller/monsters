@@ -1,0 +1,23 @@
+label: Languages
+type: checkboxes
+options:
+  abyssal: Abyssal
+  aquan: Aquan
+  auran: Auran
+  celestial: Celestial
+  common: Common
+  draconic: Draconic
+  druidic: Druidic
+  dwarven: Dwarven
+  elven: Elven
+  giant: Giant
+  gnome: Gnome
+  goblin: Goblin
+  gnoll: Gnoll
+  halfling: Halfling
+  ignan: Ignan
+  infernal: Infernal
+  orc: Orc
+  sylvan: Sylvan
+  terran: Terran
+  undercommon: Undercommon

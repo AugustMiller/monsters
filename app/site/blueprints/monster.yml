@@ -1,0 +1,201 @@
+title: Monster
+pages: false
+files: false
+fields:
+  # Basic Monster Information
+
+  basic:
+    label: Basics
+    type: headline
+
+  title:
+    label: Monster Name
+    type: text
+
+  type:
+    label: Monster Type
+    type: text
+    width: 1/2
+
+  alignment:
+    label: Creature Alignment
+    type: select
+    icon: gavel
+    options:
+      nonaligned: Nonaligned
+      lawful-good: Lawful Good
+      lawful-neutral: Lawful Neutral
+      lawful-evil: Lawful Evil
+      neutral-good: Neutral Good
+      neutral: Neutral
+      neutral-evil: Neutral Evil
+      chaotic-good: Chaotic Good
+      chaotic-neutral: Chaotic Neutral
+      chaotic-evil: Chaotic Evil
+    width: 1/2
+
+  # Vitals
+
+  vitals:
+    label: Vitals
+    type: headline
+
+  ac:
+    label: Armor Class
+    type: text
+    icon: shield
+    width: 1/2
+
+  ac_type:
+    label: Armor Class Type
+    type: text
+    icon: shield
+    width: 1/2
+
+  hp:
+    label: Hit Points
+    type: number
+    icon: heart
+    width: 1/2
+
+  hp_formula:
+    label: Hit Points (Forumula)
+    type: text
+    icon: heartbeat
+    width: 1/2
+
+  speed:
+    label: Speed
+    icon: angle-double-up
+    type: number
+    width: 1/2
+
+  # Core Attributes
+
+  core:
+    label: Core Attributes
+    type: headline
+
+  strength:
+    label: Strength
+    type: number
+    icon: bolt
+    width: 1/3
+
+  dexterity:
+    label: Dexterity
+    type: number
+    icon: arrows
+    width: 1/3
+
+  constitution:
+    label: Constitution
+    type: number
+    icon: diamond
+    width: 1/3
+
+  intelligence:
+    label: Intelligence
+    type: number
+    icon: lightbulb-o
+    width: 1/3
+
+  wisdom:
+    label: Wisdom
+    type: number
+    icon: magic
+    width: 1/3
+
+  charisma:
+    label: Charisma
+    type: number
+    icon: smile-o
+    width: 1/3
+
+  # Extended Attributes
+
+  extended:
+    label: Extended Attributes
+    type: headline
+
+  saving_throws:
+    label: Saving Throws
+    type: structure
+    style: table
+    fields:
+      damage_type:
+        extends: types-attributes
+      adjustment:
+        label: Adjustment
+        type: number
+        required: true
+        default: 0
+
+  skills:
+    extends: skills
+
+  dmg_resistance:
+    label: Damage Resistances
+    extends: types-damage
+    type: structure
+    style: table
+    fields:
+      damage_type:
+        extends: types-damage
+      adjustment:
+        label: Adjustment
+        type: number
+        required: true
+        default: 0
+
+  dmg_immunities:
+    label: Damage Immunities
+    extends: types-damage
+    type: checkboxes
+    columns: 4
+
+  condition_immunities:
+    label: Condition Immunities
+    extends: conditions
+
+  languages:
+    extends: types-languages
+    columns: 4
+
+  # Traits
+
+  traits:
+    label: Traits
+    type: headline
+
+  special_traits:
+    label: Special Traits
+    type: structure
+    fields:
+      name:
+        label: Trait Name
+        type: text
+        required: true
+      description:
+        label: Description
+        type: textarea
+        required: true
+    entry: >
+      <h5>{{name}}</h5>
+      {{description}}
+
+  actions:
+    label: Actions
+    type: structure
+    fields:
+      name:
+        label: Action Name
+        type: text
+        required: true
+      description:
+        label: Description
+        type: textarea
+        required: true
+    entry: >
+      <h5>{{name}}</h5>
+      {{description}}

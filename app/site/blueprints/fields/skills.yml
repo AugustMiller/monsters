@@ -1,0 +1,12 @@
+label: Skills
+type: structure
+style: table
+fields:
+  skill:
+    extends: types-skills
+    required: true
+  adjustment:
+    label: Adjustment
+    type: number
+    required: true
+    default: 0
