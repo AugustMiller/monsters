@@ -36,7 +36,7 @@ set :deploy_to, '/var/www/oof/monsters.staging.oof.studio'
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
 
-set :stage_config_file, -> { "site/config/config.#{fetch(:app_domain)}.php" }
+set :stage_config_file, -> { "app/site/config/config.#{fetch(:app_domain)}.php" }
 set :linked_files, fetch(:linked_files, []).push(
   fetch(:stage_config_file)
 )
