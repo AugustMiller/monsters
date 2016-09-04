@@ -1,5 +1,5 @@
 <? snippet('header') ?>
 
-<? snippet('modules/cards/monster', ['monster' => $page]) ?>
+<? snippet('modules/monster/card', ['monster' => $page]) ?>
 
 <? snippet('footer') ?>

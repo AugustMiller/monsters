@@ -1,0 +1,93 @@
+.monster-card
+  padding: 1rem
+  background-color: $color-paper
+
+  & > *
+    margin-bottom: 1rem
+    padding-bottom: 1rem
+    border-bottom: 2px solid $color-white
+
+  .monster-name
+    font-size: $type-size-large
+
+  .monster-type
+    font-size: $type-size-small
+
+    .type,
+    .alignment
+      display: block
+
+  .vitals
+    +outer-container
+
+    .ac,
+    .hp,
+    .speed
+      +span-columns(4)
+
+    .hp-formula
+      color: $color-grey
+      +type-technical
+      +wrap-parentheses
+
+
+  .attributes
+    +outer-container
+
+    .attribute
+      +span-columns(2)
+
+    h5
+      +small-caps
+
+    .value
+      vertical-align: middle
+
+    .modifier
+      +type-technical
+      +wrap-parentheses
+      color: $color-grey
+
+  .extended
+    .saving-throws
+      .attribute-types
+        +comma-separated-list('.adjustment')
+
+      .type
+        text-transform: capitalize
+        font-weight: $type-weight-normal
+
+      .adjustment
+        +type-technical
+
+    .skills
+      .skill-types
+        +comma-separated-list('.type')
+
+    .damage-resistance
+      .restistance-types
+        +comma-separated-list('.type')
+
+    .damage-immunities
+      .immunities
+        +comma-separated-list('.type')
+
+    .condition-immunities
+      .immunities
+        +comma-separated-list('.type')
+
+    .languages
+      ul
+        +comma-separated-list('.type')
+
+  .traits
+    .trait
+      margin-bottom: 0.5rem
+
+  .actions
+    .action
+      margin-bottom: 0.5rem
+
+  .more
+    ul
+      +bulleted-list

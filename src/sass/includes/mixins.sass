@@ -1,0 +1,132 @@
+// Layout
+
+=wide
+  max-width: none
+
+=bare
+  padding: 0
+
+=fill($position: absolute)
+  position: $position
+  left: 0
+  top: 0
+  max-width: none
+  width: 100%
+  height: 100%
+
+=filling-image
+  +fill
+  +lazy-image
+  padding: 0
+  z-index: 0
+
+  img
+    max-width: none
+
+=lazy-image
+  img
+    opacity: 0
+    +transition(0.15s linear opacity)
+
+    &.loaded
+      opacity: 0.85
+
+=responsive-svg
+  .responsive-svg
+    position: relative
+
+    svg
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+
+
+// Overrides
+
+=bulleted-list
+  padding-left: 2em
+
+  & > li
+    list-style-type: disc
+
+=inline-list
+  & > li
+    display: inline-block
+    padding: 0
+    @content
+
+=comma-separated-list($selector: false)
+  +inline-list
+    @if $selector
+      &:not(:last-child) #{$selector}::after
+        content: ', '
+    @else
+      &:not(:last-child)::after
+        content: ', '
+
+// UI
+
+
+// Type
+=all-caps
+  text-transform: uppercase
+  letter-spacing: 0.04em
+
+=small-caps
+  +all-caps
+  font-size: $type-size-small
+
+=type-technical
+  font-family: $type-family-monospace
+  font-size: 80%
+
+=wrap-parentheses
+  &::before
+    content: '('
+
+  &::after
+    content: ')'
+
+
+
+// Screen Sizes
+
+=widescreen
+  +breakpoint($breakpoint-desktop, min)
+    @content
+
+=desktop
+  +breakpoint($breakpoint-tablet + 1, min)
+    @content
+
+=tablet
+  +breakpoint($breakpoint-tablet, max)
+    @content
+
+=mobile
+  +breakpoint($breakpoint-mobile, max)
+    @content
+
+=breakpoint($size, $direction: max)
+  @if $direction == max
+    @media screen and ( max-width: $size )
+      @content
+  @else
+    @media screen and ( min-width: $size )
+      @content
+
+// Compatability (IE)
+
+=ie($version: 'ie')
+  .is-#{$version} &
+    @content
+
+// Omega Reset
+
+=omega-reset($nth)
+  &:nth-child(#{$nth})
+    margin-right: flex-gutter()
+  &:nth-child(#{$nth}+1)
+    clear: none
