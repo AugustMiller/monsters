@@ -1,8 +1,8 @@
 # config valid only for current version of Capistrano
 lock '3.6.1'
 
-set :application, 'my_app_name'
-set :repo_url, 'git@github.com:AugustMiller/plainkit.git'
+set :application, 'monsters'
+set :repo_url, 'git@github.com:AugustMiller/monsters.git'
 
 # Default branch is :master
 ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

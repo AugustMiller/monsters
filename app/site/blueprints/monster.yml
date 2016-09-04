@@ -34,6 +34,10 @@ fields:
       chaotic-evil: Chaotic Evil
     width: 1/2
 
+  description:
+    label: Description
+    type: textarea
+
   # Vitals
 
   vitals:
@@ -155,11 +159,13 @@ fields:
     columns: 4
 
   condition_immunities:
+    extends: types-conditions
     label: Condition Immunities
-    extends: conditions
+    columns: 4
 
   languages:
     extends: types-languages
+    label: Spoken Languages
     columns: 4
 
   # Traits

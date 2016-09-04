@@ -13,6 +13,6 @@
 </head>
 <body class="<?= Help::body_classes() ?>">
   <header>
-    Header
+    <h1><?= $site->title()->html() ?></h1>
   </header>
   <main>

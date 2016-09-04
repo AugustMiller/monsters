@@ -10,3 +10,5 @@ c::set('languages', [
     'url'     => '/',
   ]
 ]);
+
+c::set('home', 'monsters');

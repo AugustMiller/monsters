@@ -7,3 +7,10 @@ options:
   intelligence: Intelligence
   wisdom: Wisdom
   charisma: Charisma
+abbreviations:
+  strength: str
+  dexterity: dex
+  constitution: con
+  intelligence: int
+  wisdom: wis
+  charisma: chr

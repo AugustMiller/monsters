@@ -35,4 +35,16 @@
         return $image;
     }
   }
+
+  public static function adjustment ($val) {
+    if ($val >= 0) {
+      return '+' . $val;
+    } else {
+      return $val;
+    }
+  }
+
+  public static function ability_modifier ($val) {
+    return ($val - $val % 2) / 2 - 5;
+  }
 }
