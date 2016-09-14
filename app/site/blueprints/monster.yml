@@ -182,6 +182,7 @@ fields:
     fields:
       damage_type:
         extends: types-attributes
+        required: true
       adjustment:
         label: Adjustment
         type: number
@@ -198,6 +199,7 @@ fields:
     fields:
       sense:
         extends: types-senses
+        required: true
       adjustment:
         label: Adjustment
         type: text
@@ -210,6 +212,7 @@ fields:
     fields:
       damage_type:
         extends: types-damage
+        required: true
       adjustment:
         label: Adjustment
         type: number
