@@ -272,3 +272,7 @@ fields:
     entry: >
       <h5>{{name}}</h5>
       {{description}}
+
+  legendary_actions:
+    label: Legendary Actions
+    type: textarea
