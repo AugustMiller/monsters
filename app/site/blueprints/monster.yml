@@ -28,6 +28,7 @@ fields:
   type:
     extends: types-monsters
     width: 1/3
+    icon: hand-lizard-o
 
   subtype:
     label: Sub-type
@@ -75,7 +76,7 @@ fields:
     width: 1/2
 
   hp_formula:
-    label: Hit Points (Forumula)
+    label: Hit Points (Formula)
     type: text
     icon: heartbeat
     width: 1/2
@@ -87,7 +88,7 @@ fields:
     width: 1/2
 
   movement:
-    label: Movement Speeds
+    label: Movement
     type: structure
     fields:
       type:
