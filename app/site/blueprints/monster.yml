@@ -12,10 +12,42 @@ fields:
     label: Monster Name
     type: text
 
+  size:
+    label: Monster Size Class
+    type: select
+    options:
+      tiny: Tiny
+      small: Small
+      medium: Medium
+      large: Large
+      huge: Huge
+      gargantuan: Gargantuan
+    width: 1/4
+
   type:
     label: Monster Type
+    type: select
+    options:
+      abberation: Abberation
+      beast: Beast
+      celestial: Celestial
+      construct: Construct
+      dragon: Dragon
+      elemental: Elemental
+      fey: Fey
+      fiend: Fiend
+      giant: Giant
+      humanoid: Humanoid
+      monstrosity: Monstrosity
+      ooze: Ooze
+      plant: Plant
+      undead: Undead
+    width: 1/4
+
+  subtype:
+    label: Sub-type
     type: text
-    width: 1/2
+    width: 1/4
 
   alignment:
     label: Creature Alignment
@@ -32,7 +64,7 @@ fields:
       chaotic-good: Chaotic Good
       chaotic-neutral: Chaotic Neutral
       chaotic-evil: Chaotic Evil
-    width: 1/2
+    width: 1/4
 
   description:
     label: Description
