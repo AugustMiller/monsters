@@ -106,6 +106,27 @@ fields:
     type: number
     width: 1/2
 
+  movement:
+    label: Movement Speeds
+    type: structure
+    fields:
+      type:
+        label: Movement Type
+        type: select
+        options:
+          burrow: Burrow
+          climb: Climb
+          fly: Fly
+          ground: Ground
+          swim: Swim
+        required: true
+      speed:
+        label: Speed
+        type: number
+        required: true
+    style: table
+    width: 1/2
+
   # Core Attributes
 
   core:
