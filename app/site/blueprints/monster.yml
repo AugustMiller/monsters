@@ -207,7 +207,6 @@ fields:
 
   dmg_resistance:
     label: Damage Resistances
-    extends: types-damage
     type: structure
     style: table
     fields:
