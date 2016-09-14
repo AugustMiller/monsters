@@ -193,6 +193,7 @@ fields:
       adjustment:
         label: Adjustment
         type: text
+        required: true
         icon: sliders
         help: >
           Include units with the adjustment value.
