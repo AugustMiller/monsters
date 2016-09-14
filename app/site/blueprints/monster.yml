@@ -168,6 +168,7 @@ fields:
         type: number
         required: true
         default: 0
+        icon: sliders
 
   skills:
     extends: skills
@@ -183,6 +184,7 @@ fields:
       adjustment:
         label: Adjustment
         type: text
+        icon: sliders
 
   dmg_resistance:
     label: Damage Resistances
@@ -197,6 +199,7 @@ fields:
         type: number
         required: true
         default: 0
+        icon: sliders
 
   dmg_immunities:
     label: Damage Immunities

@@ -10,3 +10,4 @@ fields:
     type: number
     required: true
     default: 0
+    icon: sliders
