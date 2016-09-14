@@ -64,6 +64,7 @@ fields:
       chaotic-good: Chaotic Good
       chaotic-neutral: Chaotic Neutral
       chaotic-evil: Chaotic Evil
+    required: true
     width: 1/4
 
   description:
