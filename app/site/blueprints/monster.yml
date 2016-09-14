@@ -86,6 +86,8 @@ fields:
     icon: angle-double-up
     type: number
     width: 1/2
+    help: >
+      Enter the base speed of the monster. Units are in feet.
 
   movement:
     label: Movement
@@ -105,14 +107,20 @@ fields:
         label: Speed
         type: number
         required: true
+        help: >
+          Units are in feet.
     style: table
     width: 1/2
+    help: >
+      If the monster has special movement abilities based on terrain, add them here.
 
   # Core Attributes
 
   core:
     label: Core Attributes
     type: headline
+    help: >
+      Supply the baseline statistics, and we'll compute the modifier automatically.
 
   strength:
     label: Strength
@@ -186,6 +194,8 @@ fields:
         label: Adjustment
         type: text
         icon: sliders
+        help: >
+          Include units with the adjustment value.
 
   dmg_resistance:
     label: Damage Resistances
