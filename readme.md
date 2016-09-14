@@ -1,8 +1,21 @@
-# Kirby Plainkit
+# Monsters
 
-> Not so plain, really. This is a great place to start if you like Sass & CoffeeScript
+> A tiny app for Dungeon Masters to create and manage monster stat blocks.
+
+## About
+
+Monsters was born of a desire to have a digitized collection of canonical monsters, but grew into a vision for a tool allowing creation and composition of new monsters.
+
+Planned features include:
+
+- Full 5E-compatible monster entry
+- Custom monster collections, with print-ready format
+- Scenario generator
+- Tagging, searching, browsing of monsters and collections
 
 ## Setup
+
+Monsters can be run locally or deployed to a server for collaborative collections.
 
 This project is based on Kirby CMS. Additional requirements include:
 
@@ -12,8 +25,8 @@ This project is based on Kirby CMS. Additional requirements include:
 To get started, use the GitHub application to clone the repository, or run:
 
 ```
-$ git clone --recursive https://github.com/AugustMiller/plainkit.git
-$ cd plainkit
+$ git clone --recursive https://github.com/AugustMiller/monsters.git
+$ cd monsters
 ```
 
 It's important that the `--recursive` flag is set, because we include a number of dependencies as submodules.
@@ -21,7 +34,7 @@ It's important that the `--recursive` flag is set, because we include a number o
 You'll need to create a few folders (if they don't exist, already) for things to work correctly:
 
 ```
-$ mkdir app/site/accounts app/assets/avatars app/thumbs app/site/config
+$ mkdir -p app/site/accounts app/assets/avatars app/thumbs
 ```
 
 Then, fire up a PHP development server, on an available port:
@@ -44,38 +57,11 @@ We use [Gulp](http://gulpjs.com) to consolidate the compilation of Sass and Coff
 $ gulp watch
 ```
 
-When you're ready to deploy, `$ gulp build` will generate minified versions of `app.css` and `app.js`. This is already set up as a local task for [Capistrano](http://capistranorb.com), but you can run it manually, prior to using `rsync` or `scp`. Always remember to set up an ignore list before executing a command that overwrites remote files!
-
-### Starting a new Project
-
-To use this as the starting point for a new project, clone it as you ordinarily would, but specifying a directory name:
-
-```
-git clone --recursive https://github.com/AugustMiller/plainkit.git new-project
-cd new-project
-```
-
-Create your new project repository on GitHub, and replace the `origin` URL in the config:
-
-```
-git remote remove origin
-git remote add origin https://github.com/username/new-project.git
-git push origin master
-```
-
-Don't forget to update your server information in the Capistrano configuration files— including your new repo's URL.
+For anyone interested in self-hosting, `$ gulp build` will generate minified versions of `app.css` and `app.js`. This is already set up as a local task for [Capistrano](http://capistranorb.com), but you can run it manually, prior to using `rsync` or `scp`. Always remember to set up an ignore list before executing a command that overwrites remote files! Make sure you have a valid license before proceeding.
 
 ### Content
 
-This is up to you! A basic content folder exists, and should be modified or trashed.
-
-### Configuration
-
-Add sensitive configuration to your environment-specific config file, as `site/config/config.localhost.php`, where `localhost` is the domain of the targeted environment. The standard `config.php` is tracked in the repository, by default, to store some environment-agnostic settings.
-
-```php
-c::set('custom.config.var', 'your-super-secret-key');
-```
+There are no monsters in the repo. Visit `localhost:8000/panel` to start building your own. You may need to create the default `home` and `error` pages before logging in.
 
 ## Legal
 
