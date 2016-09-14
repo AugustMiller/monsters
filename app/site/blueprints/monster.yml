@@ -22,50 +22,29 @@ fields:
       large: Large
       huge: Huge
       gargantuan: Gargantuan
-    width: 1/4
+    width: 1/3
+    icon: expand
 
   type:
-    label: Monster Type
-    type: select
-    options:
-      abberation: Abberation
-      beast: Beast
-      celestial: Celestial
-      construct: Construct
-      dragon: Dragon
-      elemental: Elemental
-      fey: Fey
-      fiend: Fiend
-      giant: Giant
-      humanoid: Humanoid
-      monstrosity: Monstrosity
-      ooze: Ooze
-      plant: Plant
-      undead: Undead
-    width: 1/4
+    extends: types-monsters
+    width: 1/3
 
   subtype:
     label: Sub-type
     type: text
-    width: 1/4
+    width: 1/3
+    icon: code-fork
+
+  tags:
+    label: Tags
+    type: tags
+    lower: true
+    width: 1/2
 
   alignment:
-    label: Creature Alignment
-    type: select
-    icon: gavel
-    options:
-      nonaligned: Nonaligned
-      lawful-good: Lawful Good
-      lawful-neutral: Lawful Neutral
-      lawful-evil: Lawful Evil
-      neutral-good: Neutral Good
-      neutral: Neutral
-      neutral-evil: Neutral Evil
-      chaotic-good: Chaotic Good
-      chaotic-neutral: Chaotic Neutral
-      chaotic-evil: Chaotic Evil
+    extends: types-alignments
     required: true
-    width: 1/4
+    width: 1/2
 
   description:
     label: Description

@@ -1,0 +1,14 @@
+label: Alignment
+type: select
+options:
+  nonaligned: Nonaligned
+  lawful-good: Lawful Good
+  lawful-neutral: Lawful Neutral
+  lawful-evil: Lawful Evil
+  neutral-good: Neutral Good
+  neutral: Neutral
+  neutral-evil: Neutral Evil
+  chaotic-good: Chaotic Good
+  chaotic-neutral: Chaotic Neutral
+  chaotic-evil: Chaotic Evil
+icon: gavel
