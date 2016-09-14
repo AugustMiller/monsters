@@ -138,6 +138,17 @@ fields:
   skills:
     extends: skills
 
+  senses:
+    label: Senses
+    type: structure
+    style: table
+    fields:
+      sense:
+        extends: types-senses
+      adjustment:
+        label: Adjustment
+        type: text
+
   dmg_resistance:
     label: Damage Resistances
     extends: types-damage

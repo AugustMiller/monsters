@@ -1,0 +1,8 @@
+label: Senses
+type: select
+options:
+  passive-perception: Passive Perception
+  blindsight: Blindsight
+  darkvision: Darkvision
+  tremorsense: Tremorsense
+  truesight: Truesight
